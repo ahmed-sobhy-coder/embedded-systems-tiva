@@ -1,0 +1,102 @@
+
+**** Build of configuration Debug for project source ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 2 all -O 
+ 
+Building file: "../APP/source.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"APP/source.d" -MT"APP/source.o"   -o"APP/source.o" "../APP/source.c"
+Finished building: "../APP/source.c"
+ 
+Building file: "../APP/lcdapps.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"APP/lcdapps.d" -MT"APP/lcdapps.o"   -o"APP/lcdapps.o" "../APP/lcdapps.c"
+../APP/lcdapps.c: In function 'LCD_LoadingShape':
+../APP/lcdapps.c:9:19: warning: pointer targets in passing argument 2 of 'LCD_SendStrMid' differ in signedness [-Wpointer-sign]
+  LCD_SendStrMid(1,"loading");
+                   ^~~~~~~~~
+In file included from ../APP/lcdapps.h:7:0,
+                 from ../APP/lcdapps.c:1:
+G:/embedded systems/projects/arm_cc/source/HAL/lcd.h:51:6: note: expected 'int8_t * {aka signed char *}' but argument is of type 'char *'
+ void LCD_SendStrMid(uint8_t row,int8_t* str);
+      ^~~~~~~~~~~~~~
+../APP/lcdapps.c: In function 'LCD_Loading2':
+../APP/lcdapps.c:376:19: warning: pointer targets in passing argument 2 of 'LCD_SendStrMid' differ in signedness [-Wpointer-sign]
+  LCD_SendStrMid(1,"loading");
+                   ^~~~~~~~~
+In file included from ../APP/lcdapps.h:7:0,
+                 from ../APP/lcdapps.c:1:
+G:/embedded systems/projects/arm_cc/source/HAL/lcd.h:51:6: note: expected 'int8_t * {aka signed char *}' but argument is of type 'char *'
+ void LCD_SendStrMid(uint8_t row,int8_t* str);
+      ^~~~~~~~~~~~~~
+Finished building: "../APP/lcdapps.c"
+ 
+Building file: "../HAL/lcd.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o"   -o"HAL/lcd.o" "../HAL/lcd.c"
+../HAL/lcd.c: In function 'LCD_Print':
+../HAL/lcd.c:311:13: warning: pointer targets in passing argument 1 of 'LCD_Print' differ in signedness [-Wpointer-sign]
+   LCD_Print("sorry,string is too long,35 dot ");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HAL/lcd.c:303:6: note: expected 'int8_t * {aka signed char *}' but argument is of type 'char *'
+ void LCD_Print(int8_t* str)
+      ^~~~~~~~~
+Finished building: "../HAL/lcd.c"
+ 
+Building file: "../HAL/rgb.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"HAL/rgb.d" -MT"HAL/rgb.o"   -o"HAL/rgb.o" "../HAL/rgb.c"
+Finished building: "../HAL/rgb.c"
+ 
+Building file: "../HAL/switch.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"HAL/switch.d" -MT"HAL/switch.o"   -o"HAL/switch.o" "../HAL/switch.c"
+Finished building: "../HAL/switch.c"
+ 
+Building file: "../LIBS/math.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"LIBS/math.d" -MT"LIBS/math.o"   -o"LIBS/math.o" "../LIBS/math.c"
+Finished building: "../LIBS/math.c"
+ 
+Building file: "../LIBS/strfuncs.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"LIBS/strfuncs.d" -MT"LIBS/strfuncs.o"   -o"LIBS/strfuncs.o" "../LIBS/strfuncs.c"
+Finished building: "../LIBS/strfuncs.c"
+ 
+Building file: "../MCAL/clock.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/clock.d" -MT"MCAL/clock.o"   -o"MCAL/clock.o" "../MCAL/clock.c"
+Finished building: "../MCAL/clock.c"
+ 
+Building file: "../MCAL/nvic.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/nvic.d" -MT"MCAL/nvic.o"   -o"MCAL/nvic.o" "../MCAL/nvic.c"
+Finished building: "../MCAL/nvic.c"
+ 
+Building file: "../MCAL/systick.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/systick.d" -MT"MCAL/systick.o"   -o"MCAL/systick.o" "../MCAL/systick.c"
+Finished building: "../MCAL/systick.c"
+ 
+Building file: "../MCAL/tm4c123io.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/tm4c123io.d" -MT"MCAL/tm4c123io.o"   -o"MCAL/tm4c123io.o" "../MCAL/tm4c123io.c"
+Finished building: "../MCAL/tm4c123io.c"
+ 
+Building file: "../startup_and_linker/bsp.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"startup_and_linker/bsp.d" -MT"startup_and_linker/bsp.o"   -o"startup_and_linker/bsp.o" "../startup_and_linker/bsp.c"
+Finished building: "../startup_and_linker/bsp.c"
+ 
+Building file: "../startup_and_linker/startup_tm4c_gnu.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/source" -I"G:/embedded systems/projects/arm_cc/source/HAL" -I"G:/embedded systems/projects/arm_cc/source/LIBS" -I"G:/embedded systems/projects/arm_cc/source/MCAL" -I"G:/embedded systems/projects/arm_cc/source/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/source/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"startup_and_linker/startup_tm4c_gnu.d" -MT"startup_and_linker/startup_tm4c_gnu.o"   -o"startup_and_linker/startup_tm4c_gnu.o" "../startup_and_linker/startup_tm4c_gnu.c"
+Finished building: "../startup_and_linker/startup_tm4c_gnu.c"
+ 
+Building target: "source.out"
+Invoking: GNU Linker
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"source.map" -o"source.out" "./APP/lcdapps.o" "./APP/source.o" "./HAL/lcd.o" "./HAL/rgb.o" "./HAL/switch.o" "./LIBS/math.o" "./LIBS/strfuncs.o" "./MCAL/clock.o" "./MCAL/nvic.o" "./MCAL/systick.o" "./MCAL/tm4c123io.o" "./startup_and_linker/bsp.o" "./startup_and_linker/startup_tm4c_gnu.o" -Wl,-T"../startup_and_linker/tm4c123gh6pm.lds"  
+Finished building target: "source.out"
+ 
+
+**** Build Finished ****

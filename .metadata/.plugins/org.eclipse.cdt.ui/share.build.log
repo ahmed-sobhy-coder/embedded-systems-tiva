@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project share ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 2 all -O 
+ 
+Building file: "../APP/source.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/share" -I"G:/embedded systems/projects/arm_cc/share/HAL" -I"G:/embedded systems/projects/arm_cc/share/LIBS" -I"G:/embedded systems/projects/arm_cc/share/APP" -I"G:/embedded systems/projects/arm_cc/share/MCAL" -I"G:/embedded systems/projects/arm_cc/share/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/share/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"APP/source.d" -MT"APP/source.o"   -o"APP/source.o" "../APP/source.c"
+Finished building: "../APP/source.c"
+ 
+Building target: "share.out"
+Invoking: GNU Linker
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"share.map" -o"share.out" "./bsp.o" "./APP/lcdapps.o" "./APP/source.o" "./HAL/lcd.o" "./HAL/rgb.o" "./HAL/switch.o" "./LIBS/math.o" "./LIBS/stringManip.o" "./MCAL/NVIC.o" "./MCAL/clock.o" "./MCAL/systick.o" "./MCAL/tm4c123io.o" "./startup_and_linker/startup_tm4c_gnu.o" -Wl,-T"../startup_and_linker/tm4c123gh6pm.lds"  
+Finished building target: "share.out"
+ 
+
+**** Build Finished ****

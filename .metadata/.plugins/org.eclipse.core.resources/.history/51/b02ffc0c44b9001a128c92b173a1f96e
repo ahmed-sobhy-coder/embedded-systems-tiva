@@ -1,0 +1,44 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../MCAL/NVIC.c \
+../MCAL/clock.c \
+../MCAL/systick.c \
+../MCAL/tm4c123io.c 
+
+C_DEPS += \
+./MCAL/NVIC.d \
+./MCAL/clock.d \
+./MCAL/systick.d \
+./MCAL/tm4c123io.d 
+
+OBJS += \
+./MCAL/NVIC.o \
+./MCAL/clock.o \
+./MCAL/systick.o \
+./MCAL/tm4c123io.o 
+
+OBJS__QUOTED += \
+"MCAL\NVIC.o" \
+"MCAL\clock.o" \
+"MCAL\systick.o" \
+"MCAL\tm4c123io.o" 
+
+C_DEPS__QUOTED += \
+"MCAL\NVIC.d" \
+"MCAL\clock.d" \
+"MCAL\systick.d" \
+"MCAL\tm4c123io.d" 
+
+C_SRCS__QUOTED += \
+"../MCAL/NVIC.c" \
+"../MCAL/clock.c" \
+"../MCAL/systick.c" \
+"../MCAL/tm4c123io.c" 
+
+

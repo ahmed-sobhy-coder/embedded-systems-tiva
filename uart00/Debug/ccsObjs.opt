@@ -1,0 +1,1 @@
+"./APP/lcdapps.o" "./APP/source.o" "./HAL/lcd.o" "./HAL/rgb.o" "./HAL/switch.o" "./LIBS/math.o" "./LIBS/strfuncs.o" "./MCAL/clock.o" "./MCAL/nvic.o" "./MCAL/systick.o" "./MCAL/tm4c123io.o" "./startup_and_linker/bsp.o" "./startup_and_linker/startup_tm4c_gnu.o" -Wl,-T"../startup_and_linker/tm4c123gh6pm.lds" 

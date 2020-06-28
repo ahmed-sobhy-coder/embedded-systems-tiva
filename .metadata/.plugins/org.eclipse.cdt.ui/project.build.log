@@ -1,0 +1,27 @@
+
+**** Build of configuration Debug for project project ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 2 all -O 
+ 
+Building file: "../main.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/project" -I"G:/embedded systems/projects/arm_cc/project/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/project/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"main.d" -MT"main.o"   -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../bsp.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/project" -I"G:/embedded systems/projects/arm_cc/project/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/project/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"bsp.d" -MT"bsp.o"   -o"bsp.o" "../bsp.c"
+Finished building: "../bsp.c"
+ 
+Building file: "../startup_and_linker/startup_tm4c_gnu.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/project" -I"G:/embedded systems/projects/arm_cc/project/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/project/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"startup_and_linker/startup_tm4c_gnu.d" -MT"startup_and_linker/startup_tm4c_gnu.o"   -o"startup_and_linker/startup_tm4c_gnu.o" "../startup_and_linker/startup_tm4c_gnu.c"
+Finished building: "../startup_and_linker/startup_tm4c_gnu.c"
+ 
+Building target: "project.out"
+Invoking: GNU Linker
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -DPART_TM4C123GH6PM -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"project.map" -o"project.out" "./bsp.o" "./main.o" "./startup_and_linker/startup_tm4c_gnu.o" -Wl,-T"../startup_and_linker/tm4c123gh6pm.lds"  
+Finished building target: "project.out"
+ 
+
+**** Build Finished ****

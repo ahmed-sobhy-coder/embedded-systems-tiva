@@ -1,0 +1,12 @@
+#include "servo.h"
+void SERVO_Init(uint8_t port,uint8_t pin,uint16_t angleDegree)
+{
+	 float duty= ((float)(angleDegree*100))/SERVO_PERIODIC_TIME;
+   PWM_Init(port,pin,LEFT_ALIGN_MODE,50,duty);
+
+}
+void SERVO_AngleUpdate(uint8_t port,uint8_t pin,uint16_t angleDegree)
+{
+  float duty= ((float)angleDegree*100)/SERVO_PERIODIC_TIME;
+	PWM_CmpUpdate(port,pin,LEFT_ALIGN_MODE,duty);
+}

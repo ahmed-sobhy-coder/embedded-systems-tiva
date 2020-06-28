@@ -1,0 +1,56 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../HAL/dotnatrix.c \
+../HAL/keypad.c \
+../HAL/lcd.c \
+../HAL/rgb.c \
+../HAL/servo.c \
+../HAL/switch.c 
+
+C_DEPS += \
+./HAL/dotnatrix.d \
+./HAL/keypad.d \
+./HAL/lcd.d \
+./HAL/rgb.d \
+./HAL/servo.d \
+./HAL/switch.d 
+
+OBJS += \
+./HAL/dotnatrix.o \
+./HAL/keypad.o \
+./HAL/lcd.o \
+./HAL/rgb.o \
+./HAL/servo.o \
+./HAL/switch.o 
+
+OBJS__QUOTED += \
+"HAL\dotnatrix.o" \
+"HAL\keypad.o" \
+"HAL\lcd.o" \
+"HAL\rgb.o" \
+"HAL\servo.o" \
+"HAL\switch.o" 
+
+C_DEPS__QUOTED += \
+"HAL\dotnatrix.d" \
+"HAL\keypad.d" \
+"HAL\lcd.d" \
+"HAL\rgb.d" \
+"HAL\servo.d" \
+"HAL\switch.d" 
+
+C_SRCS__QUOTED += \
+"../HAL/dotnatrix.c" \
+"../HAL/keypad.c" \
+"../HAL/lcd.c" \
+"../HAL/rgb.c" \
+"../HAL/servo.c" \
+"../HAL/switch.c" 
+
+

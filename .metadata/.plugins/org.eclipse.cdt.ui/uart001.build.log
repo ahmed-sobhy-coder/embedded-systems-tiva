@@ -1,0 +1,815 @@
+
+**** Build of configuration Debug for project uart001 ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 2 all -O 
+ 
+Building file: "../APP/lcdapps.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"APP/lcdapps.d" -MT"APP/lcdapps.o"   -o"APP/lcdapps.o" "../APP/lcdapps.c"
+APP/subdir_rules.mk:9: recipe for target 'APP/lcdapps.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../APP/lcdapps.h:3,
+                 from ../APP/lcdapps.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../APP/lcdapps.h:3,
+                 from ../APP/lcdapps.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+../APP/lcdapps.c: In function 'LCD_LoadingShape':
+../APP/lcdapps.c:9:19: warning: pointer targets in passing argument 2 of 'LCD_SendStrMid' differ in signedness [-Wpointer-sign]
+  LCD_SendStrMid(1,"loading");
+                   ^~~~~~~~~
+In file included from ../APP/lcdapps.h:7:0,
+                 from ../APP/lcdapps.c:1:
+G:/embedded systems/projects/arm_cc/uart001/HAL/lcd.h:51:6: note: expected 'int8_t * {aka signed char *}' but argument is of type 'char *'
+ void LCD_SendStrMid(uint8_t row,int8_t* str);
+      ^~~~~~~~~~~~~~
+../APP/lcdapps.c: In function 'LCD_Loading2':
+../APP/lcdapps.c:376:19: warning: pointer targets in passing argument 2 of 'LCD_SendStrMid' differ in signedness [-Wpointer-sign]
+  LCD_SendStrMid(1,"loading");
+                   ^~~~~~~~~
+In file included from ../APP/lcdapps.h:7:0,
+                 from ../APP/lcdapps.c:1:
+G:/embedded systems/projects/arm_cc/uart001/HAL/lcd.h:51:6: note: expected 'int8_t * {aka signed char *}' but argument is of type 'char *'
+ void LCD_SendStrMid(uint8_t row,int8_t* str);
+      ^~~~~~~~~~~~~~
+gmake: *** [APP/lcdapps.o] Error 1
+Building file: "../bsp.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"bsp.d" -MT"bsp.o"   -o"bsp.o" "../bsp.c"
+subdir_rules.mk:9: recipe for target 'bsp.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from ../TM4C123GH6PM.h:316,
+                 from ../bsp.c:2:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from ../TM4C123GH6PM.h:316,
+                 from ../bsp.c:2:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [bsp.o] Error 1
+Building file: "../HAL/lcd.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o"   -o"HAL/lcd.o" "../HAL/lcd.c"
+HAL/subdir_rules.mk:9: recipe for target 'HAL/lcd.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/lcd.h:3,
+                 from ../HAL/lcd.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/lcd.h:3,
+                 from ../HAL/lcd.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+../HAL/lcd.c: In function 'LCD_Print':
+../HAL/lcd.c:311:13: warning: pointer targets in passing argument 1 of 'LCD_Print' differ in signedness [-Wpointer-sign]
+   LCD_Print("sorry,string is too long,35 dot ");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HAL/lcd.c:303:6: note: expected 'int8_t * {aka signed char *}' but argument is of type 'char *'
+ void LCD_Print(int8_t* str)
+      ^~~~~~~~~
+gmake: *** [HAL/lcd.o] Error 1
+Building file: "../APP/source.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"APP/source.d" -MT"APP/source.o"   -o"APP/source.o" "../APP/source.c"
+APP/subdir_rules.mk:9: recipe for target 'APP/source.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../APP/app.h:3,
+                 from ../APP/source.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../APP/app.h:3,
+                 from ../APP/source.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+../APP/source.c: In function 'LCD_StrRot':
+../APP/source.c:17:9: warning: unused variable 'flag' [-Wunused-variable]
+  int8_t flag=0;
+         ^~~~
+../APP/source.c:14:10: warning: unused variable 'count3' [-Wunused-variable]
+  uint8_t count3=0;
+          ^~~~~~
+../APP/source.c:13:18: warning: unused variable 'temp' [-Wunused-variable]
+  uint8_t count=0,temp;
+                  ^~~~
+gmake: *** [APP/source.o] Error 1
+Building file: "../HAL/rgb.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"HAL/rgb.d" -MT"HAL/rgb.o"   -o"HAL/rgb.o" "../HAL/rgb.c"
+HAL/subdir_rules.mk:9: recipe for target 'HAL/rgb.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/rgb.h:3,
+                 from ../HAL/rgb.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/rgb.h:3,
+                 from ../HAL/rgb.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [HAL/rgb.o] Error 1
+Building file: "../HAL/servo.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"HAL/servo.d" -MT"HAL/servo.o"   -o"HAL/servo.o" "../HAL/servo.c"
+HAL/subdir_rules.mk:9: recipe for target 'HAL/servo.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/servo.h:3,
+                 from ../HAL/servo.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/servo.h:3,
+                 from ../HAL/servo.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [HAL/servo.o] Error 1
+Building file: "../HAL/switch.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"HAL/switch.d" -MT"HAL/switch.o"   -o"HAL/switch.o" "../HAL/switch.c"
+HAL/subdir_rules.mk:9: recipe for target 'HAL/switch.o' failed
+Building file: "../LIBS/math.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"LIBS/math.d" -MT"LIBS/math.o"   -o"LIBS/math.o" "../LIBS/math.c"
+LIBS/subdir_rules.mk:9: recipe for target 'LIBS/math.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/switch.h:3,
+                 from ../HAL/switch.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../HAL/switch.h:3,
+                 from ../HAL/switch.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [HAL/switch.o] Error 1
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../LIBS/math.h:3,
+                 from ../LIBS/math.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../LIBS/math.h:3,
+                 from ../LIBS/math.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [LIBS/math.o] Error 1
+Building file: "../MCAL/NVIC.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/NVIC.d" -MT"MCAL/NVIC.o"   -o"MCAL/NVIC.o" "../MCAL/NVIC.c"
+MCAL/subdir_rules.mk:9: recipe for target 'MCAL/NVIC.o' failed
+Building file: "../LIBS/stringManip.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"LIBS/stringManip.d" -MT"LIBS/stringManip.o"   -o"LIBS/stringManip.o" "../LIBS/stringManip.c"
+LIBS/subdir_rules.mk:9: recipe for target 'LIBS/stringManip.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.h:316,
+                 from ../MCAL/NVIC.h:5,
+                 from ../MCAL/NVIC.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.h:316,
+                 from ../MCAL/NVIC.h:5,
+                 from ../MCAL/NVIC.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [MCAL/NVIC.o] Error 1
+Building file: "../MCAL/clock.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/clock.d" -MT"MCAL/clock.o"   -o"MCAL/clock.o" "../MCAL/clock.c"
+MCAL/subdir_rules.mk:9: recipe for target 'MCAL/clock.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../LIBS/math.h:3,
+                 from ../LIBS/stringManip.h:5,
+                 from ../LIBS/stringManip.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from G:/embedded systems/projects/arm_cc/uart001/MCAL/tm4c123io.h:6,
+                 from ../LIBS/math.h:3,
+                 from ../LIBS/stringManip.h:5,
+                 from ../LIBS/stringManip.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [LIBS/stringManip.o] Error 1
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/clock.h:4,
+                 from ../MCAL/clock.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/clock.h:4,
+                 from ../MCAL/clock.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [MCAL/clock.o] Error 1
+Building file: "../MCAL/pwm.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/pwm.d" -MT"MCAL/pwm.o"   -o"MCAL/pwm.o" "../MCAL/pwm.c"
+MCAL/subdir_rules.mk:9: recipe for target 'MCAL/pwm.o' failed
+Building file: "../MCAL/ssi.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/ssi.d" -MT"MCAL/ssi.o"   -o"MCAL/ssi.o" "../MCAL/ssi.c"
+MCAL/subdir_rules.mk:9: recipe for target 'MCAL/ssi.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/pwm.h:5,
+                 from ../MCAL/pwm.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/pwm.h:5,
+                 from ../MCAL/pwm.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+In file included from ../MCAL/pwm.h:4:0,
+                 from ../MCAL/pwm.c:1:
+../MCAL/pwm.c: In function 'PWM_Init':
+G:/embedded systems/projects/arm_cc/uart001/LIBS/bitMAnip.h:9:36: error: assignment of read-only member 'CR'
+ #define ST1B(R,I)                (R|=B(I))
+                                    ^
+../MCAL/pwm.c:649:4: note: in expansion of macro 'ST1B'
+    ST1B(GPIOF->CR, PF0);
+    ^~~~
+../MCAL/pwm.c: In function 'PWM_GenInit':
+G:/embedded systems/projects/arm_cc/uart001/LIBS/bitMAnip.h:9:36: error: assignment of read-only member 'CR'
+ #define ST1B(R,I)                (R|=B(I))
+                                    ^
+../MCAL/pwm.c:1617:3: note: in expansion of macro 'ST1B'
+   ST1B(GPIOF->CR, PF0);
+   ^~~~
+gmake: *** [MCAL/pwm.o] Error 1
+Building file: "../MCAL/systick.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/systick.d" -MT"MCAL/systick.o"   -o"MCAL/systick.o" "../MCAL/systick.c"
+MCAL/subdir_rules.mk:9: recipe for target 'MCAL/systick.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/ssi.h:5,
+                 from ../MCAL/ssi.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/ssi.h:5,
+                 from ../MCAL/ssi.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+In file included from ../MCAL/ssi.h:4:0,
+                 from ../MCAL/ssi.c:1:
+../MCAL/ssi.c: In function 'SSI_Init':
+G:/embedded systems/projects/arm_cc/uart001/LIBS/bitManip.h:9:36: error: assignment of read-only member 'CR'
+ #define ST1B(R,I)                (R|=B(I))
+                                    ^
+../MCAL/ssi.c:55:3: note: in expansion of macro 'ST1B'
+   ST1B(GPIOF->CR, PF0); //commit the change in PF0
+   ^~~~
+gmake: *** [MCAL/ssi.o] Error 1
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.h:316,
+                 from ../MCAL/systick.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.h:316,
+                 from ../MCAL/systick.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+gmake: *** [MCAL/systick.o] Error 1
+Building file: "../MCAL/tm4c123io.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/tm4c123io.d" -MT"MCAL/tm4c123io.o"   -o"MCAL/tm4c123io.o" "../MCAL/tm4c123io.c"
+MCAL/subdir_rules.mk:9: recipe for target 'MCAL/tm4c123io.o' failed
+Building file: "../MCAL/uart.c"
+Invoking: GNU Compiler
+"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc.exe" -c -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DPART_TM4C123GH6PM -I"G:/embedded systems/projects/arm_cc/uart001" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/APP" -I"G:/embedded systems/projects/arm_cc/uart001/HAL" -I"G:/embedded systems/projects/arm_cc/uart001/LIBS" -I"G:/embedded systems/projects/arm_cc/uart001/MCAL" -I"G:/embedded systems/projects/arm_cc/uart001/startup_and_linker" -I"G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include" -I"C:/ti/ccsv8/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -specs="nosys.specs" -MMD -MP -MF"MCAL/uart.d" -MT"MCAL/uart.o"   -o"MCAL/uart.o" "../MCAL/uart.c"
+MCAL/subdir_rules.mk:9: recipe for target 'MCAL/uart.o' failed
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/tm4c123io.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/tm4c123io.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+In file included from ../MCAL/tm4c123io.h:5:0,
+                 from ../MCAL/tm4c123io.c:1:
+../MCAL/tm4c123io.c: In function 'GPIO_Pin_Init':
+G:/embedded systems/projects/arm_cc/uart001/LIBS/bitManip.h:9:36: error: assignment of read-only member 'CR'
+ #define ST1B(R,I)                (R|=B(I))
+                                    ^
+../MCAL/tm4c123io.c:455:4: note: in expansion of macro 'ST1B'
+    ST1B(GPIOD->CR, PD7);
+    ^~~~
+G:/embedded systems/projects/arm_cc/uart001/LIBS/bitManip.h:9:36: error: assignment of read-only member 'CR'
+ #define ST1B(R,I)                (R|=B(I))
+                                    ^
+../MCAL/tm4c123io.c:601:4: note: in expansion of macro 'ST1B'
+    ST1B(GPIOF->CR, PF0);
+    ^~~~
+../MCAL/tm4c123io.c: In function 'GPIO_Port_Init':
+G:/embedded systems/projects/arm_cc/uart001/LIBS/bitManip.h:9:36: error: assignment of read-only member 'CR'
+ #define ST1B(R,I)                (R|=B(I))
+                                    ^
+../MCAL/tm4c123io.c:1271:3: note: in expansion of macro 'ST1B'
+   ST1B(GPIOD->CR, PD7);
+   ^~~~
+G:/embedded systems/projects/arm_cc/uart001/LIBS/bitManip.h:9:36: error: assignment of read-only member 'CR'
+ #define ST1B(R,I)                (R|=B(I))
+                                    ^
+../MCAL/tm4c123io.c:1306:3: note: in expansion of macro 'ST1B'
+   ST1B(GPIOF->CR, PF0);
+   ^~~~
+gmake: *** [MCAL/tm4c123io.o] Error 1
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/uart.h:4,
+                 from ../MCAL/uart.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1216:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+In file included from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cmInstr.h:61:0,
+                 from G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/core_cm4.h:210,
+                 from G:/embedded systems/projects/arm_cc/uart001/TM4C123GH6PM.H:316,
+                 from ../MCAL/tm4c123io.h:6,
+                 from ../MCAL/uart.h:4,
+                 from ../MCAL/uart.c:1:
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1233:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1282:99: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                   ^~~~~~~~
+                                                                                                   uint32_t
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:52: error: unknown type name 'uint64_t'
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                    ^~~~~~~~
+G:/embedded systems/projects/arm_cc/uart001/CMSIS/Include/cmsis_gcc.h:1299:100: error: unknown type name 'uint64_t'; did you mean 'uint32_t'?
+ __attribute__( ( always_inline ) ) __STATIC_INLINE uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+                                                                                                    ^~~~~~~~
+                                                                                                    uint32_t
+../MCAL/uart.c: In function 'Uart_Send_Integer':
+../MCAL/uart.c:286:26: warning: implicit declaration of function 'Int_To_string_conversion'; did you mean 'Float_To_string_conversion'? [-Wimplicit-function-declaration]
+  Uart_Send_String(uartn, Int_To_string_conversion(num));
+                          ^~~~~~~~~~~~~~~~~~~~~~~~
+                          Float_To_string_conversion
+../MCAL/uart.c:286:26: warning: passing argument 2 of 'Uart_Send_String' makes pointer from integer without a cast [-Wint-conversion]
+../MCAL/uart.c:152:6: note: expected 'int8_t * {aka signed char *}' but argument is of type 'int'
+ void Uart_Send_String(uint8_t uartn, int8_t* string){
+      ^~~~~~~~~~~~~~~~
+gmake: *** [MCAL/uart.o] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

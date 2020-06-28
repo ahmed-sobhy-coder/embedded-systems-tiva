@@ -1,0 +1,38 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../LIBS/math.c \
+../LIBS/strfuncs.c \
+../LIBS/stringManip.c 
+
+C_DEPS += \
+./LIBS/math.d \
+./LIBS/strfuncs.d \
+./LIBS/stringManip.d 
+
+OBJS += \
+./LIBS/math.o \
+./LIBS/strfuncs.o \
+./LIBS/stringManip.o 
+
+OBJS__QUOTED += \
+"LIBS\math.o" \
+"LIBS\strfuncs.o" \
+"LIBS\stringManip.o" 
+
+C_DEPS__QUOTED += \
+"LIBS\math.d" \
+"LIBS\strfuncs.d" \
+"LIBS\stringManip.d" 
+
+C_SRCS__QUOTED += \
+"../LIBS/math.c" \
+"../LIBS/strfuncs.c" \
+"../LIBS/stringManip.c" 
+
+

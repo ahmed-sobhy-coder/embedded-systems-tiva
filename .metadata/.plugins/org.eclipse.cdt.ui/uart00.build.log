@@ -1,0 +1,12 @@
+
+**** Clean-only build of configuration Debug for project uart00 ****
+
+"C:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 2 clean -O 
+ 
+DEL /F  "uart00.hex"  "uart00.out" 
+DEL /F "APP\lcdapps.o" "APP\source.o" "HAL\lcd.o" "HAL\rgb.o" "HAL\switch.o" "LIBS\math.o" "LIBS\strfuncs.o" "MCAL\clock.o" "MCAL\nvic.o" "MCAL\systick.o" "MCAL\tm4c123io.o" "startup_and_linker\bsp.o" "startup_and_linker\startup_tm4c_gnu.o" 
+DEL /F "APP\lcdapps.d" "APP\source.d" "HAL\lcd.d" "HAL\rgb.d" "HAL\switch.d" "LIBS\math.d" "LIBS\strfuncs.d" "MCAL\clock.d" "MCAL\nvic.d" "MCAL\systick.d" "MCAL\tm4c123io.d" "startup_and_linker\bsp.d" "startup_and_linker\startup_tm4c_gnu.d" 
+Finished clean
+ 
+
+**** Build Finished ****

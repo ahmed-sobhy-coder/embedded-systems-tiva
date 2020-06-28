@@ -1,0 +1,68 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../MCAL/NVIC.c \
+../MCAL/clock.c \
+../MCAL/pwm.c \
+../MCAL/ssi.c \
+../MCAL/systick.c \
+../MCAL/tm4c123io.c \
+../MCAL/twi.c \
+../MCAL/uart.c 
+
+C_DEPS += \
+./MCAL/NVIC.d \
+./MCAL/clock.d \
+./MCAL/pwm.d \
+./MCAL/ssi.d \
+./MCAL/systick.d \
+./MCAL/tm4c123io.d \
+./MCAL/twi.d \
+./MCAL/uart.d 
+
+OBJS += \
+./MCAL/NVIC.o \
+./MCAL/clock.o \
+./MCAL/pwm.o \
+./MCAL/ssi.o \
+./MCAL/systick.o \
+./MCAL/tm4c123io.o \
+./MCAL/twi.o \
+./MCAL/uart.o 
+
+OBJS__QUOTED += \
+"MCAL\NVIC.o" \
+"MCAL\clock.o" \
+"MCAL\pwm.o" \
+"MCAL\ssi.o" \
+"MCAL\systick.o" \
+"MCAL\tm4c123io.o" \
+"MCAL\twi.o" \
+"MCAL\uart.o" 
+
+C_DEPS__QUOTED += \
+"MCAL\NVIC.d" \
+"MCAL\clock.d" \
+"MCAL\pwm.d" \
+"MCAL\ssi.d" \
+"MCAL\systick.d" \
+"MCAL\tm4c123io.d" \
+"MCAL\twi.d" \
+"MCAL\uart.d" 
+
+C_SRCS__QUOTED += \
+"../MCAL/NVIC.c" \
+"../MCAL/clock.c" \
+"../MCAL/pwm.c" \
+"../MCAL/ssi.c" \
+"../MCAL/systick.c" \
+"../MCAL/tm4c123io.c" \
+"../MCAL/twi.c" \
+"../MCAL/uart.c" 
+
+

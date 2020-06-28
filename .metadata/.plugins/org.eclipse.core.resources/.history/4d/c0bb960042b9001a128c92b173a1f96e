@@ -1,0 +1,19 @@
+#ifndef __SERVO_H__
+#define __SERVO_H__
+#include "tm4c123io.h"
+#include "bitManip.h"
+//#include "pwm.h"
+/*
+from practical point of view :
+0 angle   ==>1300
+90 angle  ==> 2300
+-90 angle ==>700
+*/
+#define angle_0      1500 //1.5ms = 1500us
+#define angle_neg_90 1000 //1ms = 1000us
+#define angle_90     2000 //2ms = 2000us
+#define SERVO_PERIODIC_TIME  20000 //20ms=20000us
+void SERVO_Init(uint8_t port,uint8_t pin,uint16_t angleDegree);
+void SERVO_AngleUpdate(uint8_t port,uint8_t pin,uint16_t angleDegree);
+
+#endif
